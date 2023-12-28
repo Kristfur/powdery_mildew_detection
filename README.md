@@ -11,6 +11,10 @@
   - [ML Business Case](#ml-business-case)
   - [Dashboard Design](#dashboard-design)
   - [Unfixed Bugs](#unfixed-bugs)
+  - [Model Design](#model-design)
+    - [Input](#input)
+    - [Hidden Layers](#hidden-layers)
+    - [Output Layer](#output-layer)
   - [Deployment](#deployment)
     - [Heroku](#heroku)
   - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
@@ -119,6 +123,33 @@ Page 5: ML Prediction Metrics
     -	Model evaluation result
 
 ## Unfixed Bugs
+
+## Model Design
+
+Loss function is "categorical_crossentropy", as we want the model to predice wether the imnage belongs to one of two categories.
+
+Optimizer is "adam", as seen used in [WalkthroughProject01]{#reference_1}.
+
+Metrics is "accuracy", because we want to train the model to correctly predict the category of the image.
+
+Model Summary
+{image}
+
+### Input
+
+The imput for this model is a 256 X 256 x 3 array representing an image of a leaf that is either healthy or infected with powdery mildew.
+
+### Hidden Layers
+
+1. A set of 3 convolution + pooling layers which allows the network to discover complex patterns within patterns.
+
+2. A flatten layer to convert the matrix to a vector.
+3. A dense layer with 64 nodes, and the activation function 'relu'
+4. A dropout layer with a value of 0.5, this reduces the chance of the model overfitting
+
+### Output Layer
+
+A dense layer with 2 nodes, activation function of softmax to ensure the output is one or the other, healthy or powdery mildew
 
 ## Deployment
 
