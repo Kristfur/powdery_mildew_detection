@@ -15,6 +15,7 @@
     - [Input](#input)
     - [Hidden Layers](#hidden-layers)
     - [Output Layer](#output-layer)
+    - [Model Refinement](#model-refinement)
   - [Deployment](#deployment)
     - [Heroku](#heroku)
   - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
@@ -150,6 +151,23 @@ The imput for this model is a 256 X 256 x 3 array representing an image of a lea
 ### Output Layer
 
 A dense layer with 2 nodes, activation function of softmax to ensure the output is one or the other, healthy or powdery mildew
+
+### Model Refinement
+
+Model v1:
+Initial model, first danse layer nodes equals image shape width. Gradually condenses nodes into 2 output nodes.
+Has over 14.5 million trainable parameters. This model is too large for the task it is assigned to.
+[img]
+
+Model v2:
+Achieved similar accuracy to v1, while having half the number of trainable parameters.
+[img]
+{eval pkl}
+
+Model v3:
+Achieved similar accuracy to v2, while having half the number of trainable parameters. A quarter of the size of v1.
+[img]
+{eval pkl}
 
 ## Deployment
 
