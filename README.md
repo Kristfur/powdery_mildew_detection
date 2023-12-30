@@ -16,6 +16,7 @@
     - [Hidden Layers](#hidden-layers)
     - [Output Layer](#output-layer)
     - [Model Refinement](#model-refinement)
+  - [Final Result](#final-result)
   - [Deployment](#deployment)
     - [Heroku](#heroku)
   - [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
@@ -168,6 +169,10 @@ Achieved similar accuracy to v1, while having half the number of trainable param
 Model v3:
 Achieved similar accuracy to v2, while having half the number of trainable parameters. A quarter of the size of v1.
 ![Model summary v3](src/media/model_summary_v3.JPG)
+
+## Final Result
+
+The model met the required accuracy of +97% with an accuracy of over 99% on the validation set.
 
 ## Deployment
 
