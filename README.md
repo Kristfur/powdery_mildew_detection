@@ -1,5 +1,7 @@
 # Powdery Mildew Detection
 
+The deployed Heroku app is [here](https://powdery-mildew-kristfur-1b27c28aaef5.herokuapp.com/).
+
 # Table of Contents
 
 - [Powdery Mildew Detection](#powdery-mildew-detection)
@@ -137,6 +139,7 @@ Optimizer is "adam", as seen used in [WalkthroughProject01]{#reference_1}.
 Metrics is "accuracy", because we want to train the model to correctly predict the category of the image.
 
 Model Summary
+
 ![Model summary v3](src/media/model_summary_v3.JPG)
 
 ### Input
@@ -158,17 +161,24 @@ A dense layer with 2 nodes, activation function of softmax to ensure the output 
 ### Model Refinement
 
 Model v1:
-Initial model, first danse layer nodes equals image shape width. Gradually condenses nodes into 2 output nodes.
-Has over 14.5 million trainable parameters. This model is too large for the task it is assigned to.
+
 ![Model summary v1](src/media/model_summary_v1.JPG)
 
+Initial model, first danse layer nodes equals image shape width. Gradually condenses nodes into 2 output nodes.
+Has over 14.5 million trainable parameters. This model is too large for the task it is assigned to.
+
 Model v2:
-Achieved similar accuracy to v1, while having half the number of trainable parameters.
+
 ![Model summary v2](src/media/model_summary_v2.JPG)
 
+Achieved similar accuracy to v1, while having half the number of trainable parameters.
+
 Model v3:
-Achieved similar accuracy to v2, while having half the number of trainable parameters. A quarter of the size of v1.
+
 ![Model summary v3](src/media/model_summary_v3.JPG)
+
+Achieved similar accuracy to v2, while having half the number of trainable parameters. A quarter of the size of v1.
+
 
 ## Final Result
 
