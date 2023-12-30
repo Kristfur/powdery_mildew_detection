@@ -14,6 +14,7 @@ The deployed Heroku app is [here](https://powdery-mildew-kristfur-1b27c28aaef5.h
   - [Dashboard Design](#dashboard-design)
   - [Unfixed Bugs](#unfixed-bugs)
   - [Model Design](#model-design)
+    - [Model Summary](#model-summary)
     - [Input](#input)
     - [Hidden Layers](#hidden-layers)
     - [Output Layer](#output-layer)
@@ -132,13 +133,13 @@ There are no known bugs.
 
 ## Model Design
 
-Loss function is "categorical_crossentropy", as we want the model to predice wether the imnage belongs to one of two categories.
+Loss function is "categorical_crossentropy", as we want the model to predict if the image belongs to one of two categories.
 
-Optimizer is "adam", as seen used in [WalkthroughProject01]{#reference_1}.
+Optimizer is "adam", as seen used in [WalkthroughProject01]{#credits}.
 
 Metrics is "accuracy", because we want to train the model to correctly predict the category of the image.
 
-Model Summary
+### Model Summary
 
 ![Model summary v3](src/media/model_summary_v3.JPG)
 
@@ -156,7 +157,7 @@ The imput for this model is a 256 X 256 x 3 array representing an image of a lea
 
 ### Output Layer
 
-A dense layer with 2 nodes, activation function of softmax to ensure the output is one or the other, healthy or powdery mildew
+A dense layer with 2 nodes, activation function of softmax to ensure the output is one or the other, healthy or powdery mildew.
 
 ### Model Refinement
 
@@ -177,8 +178,7 @@ Model v3:
 
 ![Model summary v3](src/media/model_summary_v3.JPG)
 
-Achieved similar accuracy to v2, while having half the number of trainable parameters. A quarter of the size of v1.
-
+Achieved similar accuracy to v2, while having half the number of trainable parameters. A quarter of the size of v1, 3.7 million parameters.
 
 ## Final Result
 
