@@ -1,5 +1,7 @@
 output/v3/powdery_mildew_detector_model.h5
 inputs/mildew_detection/cherry_leaves/test
 inputs/mildew_detection/cherry_leaves/train
+src/media
+README.md
 
 jupyter_notebooks
