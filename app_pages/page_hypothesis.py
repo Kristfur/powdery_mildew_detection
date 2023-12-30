@@ -25,8 +25,8 @@ def page_hypothesis_body():
         f"Result: As expected, but the discolouration could also be caused by "
         f"the white powdery mildew patches, instead of just the pigment of "
         f"the leaf. The powdery mildew seems to cause the leaf to loose some "
-        f"of it’s vibrant green pigment.\n")
-    
+        f"of it's vibrant green pigment.\n")
+
     st.write(
         f"3. Infected leaves have overall smoother edges, and a less "
         f"defined 'leaf' shape./n"
@@ -36,5 +36,4 @@ def page_hypothesis_body():
         f"leaves, which indicate that the edges of the leaves are different "
         f"when it is healthy to when it has powdery mildew.\n"
         f"Result: As expected. The powdery mildew causes the leaves' edges to "
-        f"become less defined and smoother."
-    )
+        f"become less defined and smoother.")

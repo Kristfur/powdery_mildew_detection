@@ -38,7 +38,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 ## Hypothesis and how to validate?
 
   1. The leaves infected with powdery mildew have patches of white discoloration on the leaf.
-     - An average image study will be useful to investigate this. We are expecting the average powdery mildew image to show white patches where the powdery mildew is present. We will compare the healthy to the powdery mildew average image and we expect to not see whit patches on the average healthy image.
+     - An average image study will be useful to investigate this. We are expecting the average powdery mildew image to show white patches where the powdery mildew is present. We will compare the healthy to the powdery mildew average image and we expect to not see white patches on the average healthy image.
   2. Healthy leaves have a more uniform, greener color.
      - An average variability image study will be useful to investigate this. We expect to see a dark area on the healthy variability image, meaning that the leaves have a more consistant color. And for the powdery mildew, we expect to see more lighter areas all over the leaf in the variavility image indicating that the powdery mildew leaves are not a consistant green color.
   3. Infected leaves have overall smoother edges, and a less defined "leaf" shape.
@@ -125,6 +125,8 @@ Page 5: ML Prediction Metrics
 
 ## Unfixed Bugs
 
+There are no known bugs.
+
 ## Model Design
 
 Loss function is "categorical_crossentropy", as we want the model to predice wether the imnage belongs to one of two categories.
@@ -134,7 +136,7 @@ Optimizer is "adam", as seen used in [WalkthroughProject01]{#reference_1}.
 Metrics is "accuracy", because we want to train the model to correctly predict the category of the image.
 
 Model Summary
-{image}
+![Model summary v3](src/media/model_summary_v3.JPG)
 
 ### Input
 
@@ -157,17 +159,15 @@ A dense layer with 2 nodes, activation function of softmax to ensure the output 
 Model v1:
 Initial model, first danse layer nodes equals image shape width. Gradually condenses nodes into 2 output nodes.
 Has over 14.5 million trainable parameters. This model is too large for the task it is assigned to.
-[img]
+![Model summary v1](src/media/model_summary_v1.JPG)
 
 Model v2:
 Achieved similar accuracy to v1, while having half the number of trainable parameters.
-[img]
-{eval pkl}
+![Model summary v2](src/media/model_summary_v2.JPG)
 
 Model v3:
 Achieved similar accuracy to v2, while having half the number of trainable parameters. A quarter of the size of v1.
-[img]
-{eval pkl}
+![Model summary v3](src/media/model_summary_v3.JPG)
 
 ## Deployment
 
@@ -186,8 +186,40 @@ Achieved similar accuracy to v2, while having half the number of trainable param
 
 ## Main Data Analysis and Machine Learning Libraries
 
-- Here you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+Kaggle
+
+- Used to obtain the cherry leaves dataset
+
+pandas
+
+- Used to manipulate data
+
+numpy
+
+- Used to manipulate data
+
+matplotlib
+
+- Used to create plots
+
+seaborn
+
+- Used to create plots
+
+joblib
+
+- Used to save and load pkl file
+
+tensorflow
+
+- Used to create machine learnign model
 
 ## Credits
 
 - The information for the text on the dashboard summary page was taken from [Wikipedia](https://en.wikipedia.org/wiki/Powdery_mildew).
+  
+- [Walkthrough Project 01](https://github.com/Code-Institute-Org/WalkthroughProject01) Project 01 - Code Institute 
+  * Was used as a rferance for machine learning model and streamlit dashboard
+  
+- [Code Institute](https://learn.codeinstitute.net) Predictive Analysis / ML:TesnsorFlow
+  * Was used to create model

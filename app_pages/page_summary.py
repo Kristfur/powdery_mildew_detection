@@ -19,13 +19,14 @@ def page_summary_body():
         f"* A leaf is obtained from a suspected plant, and photographed."
         f"Visual criteria are used to detect if powdery mildew is present. \n"
         f"**Project Dataset**\n"
-        f"* The given dataset contains over 4000 images in total, half of which"
-        f" are of single healthy leaves and the rest are of "
-        f" single leaves infected with powdery mildew."
+        f"* The given dataset contains over 4000 images in total, half of "
+        f"whichare of single healthy leaves and the rest are of "
+        f"single leaves infected with powdery mildew.")
 
     st.write(
         f"* For additional information, please visit and **read** the "
-        f"[Project README file](https://github.com/Kristfur/powdery_mildew_detection/blob/main/README.md).")
+        f"[Project README file](https://github.com/Kristfur"
+        f"/powdery_mildew_detection/blob/main/README.md).")
 
     st.success(
         f"**Business Requirements**"

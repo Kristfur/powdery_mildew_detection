@@ -25,10 +25,10 @@ def page_leaf_visualizer_body():
             f"leaves overlap.\n"
             f"The average variability between the healthy leaf images "
             f"has a dark centre, indicating that the colour of the leaves "
-            f"don’t vary a lot.\n"
+            f"don't vary a lot.\n"
             )
 
-        avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")    
+        avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
 
         st.info(
             f"Compared to the average healthy leaves, the average powdery "
