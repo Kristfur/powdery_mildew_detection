@@ -17,7 +17,7 @@ def page_summary_body():
         f"* There are treatments for infected plants, "
         f"but it is time consuming to identify infected plants. \n"
         f"* A leaf is obtained from a suspected plant, and photographed."
-        f"Visual criteria are used to detect if powdery mildew is present. \n"
+        f"Visual criteria are used to detect if powdery mildew is present. \n \n"
         f"**Project Dataset**\n"
         f"* The given dataset contains over 4000 images in total, half of "
         f"whichare of single healthy leaves and the rest are of "
@@ -29,7 +29,7 @@ def page_summary_body():
         f"/powdery_mildew_detection/blob/main/README.md).")
 
     st.success(
-        f"**Business Requirements**"
+        f"**Business Requirements**\n"
         f"* 1 - The client is interested in conducting a study to visually "
         f"differentiate a cherry leaf that is healthy from one "
         f"that contains powdery mildew. \n"

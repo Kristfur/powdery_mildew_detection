@@ -173,6 +173,7 @@ Achieved similar accuracy to v2, while having half the number of trainable param
 ## Final Result
 
 The model met the required accuracy of +97% with an accuracy of over 99% on the validation set.
+The model used for the dashboard is v2, as it is the most accurate.
 
 ## Deployment
 

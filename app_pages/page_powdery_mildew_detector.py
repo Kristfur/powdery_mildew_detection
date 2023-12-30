@@ -19,7 +19,7 @@ def page_powdery_mildew_detector_body():
         f"* You can download a set of healthy and powdery mildew leaves for "
         f"live prediction. \n"
         f"You can download the images "
-        f"[here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves/code)."
+        f"[here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves)."
     )
 
     st.write("---")
@@ -37,9 +37,9 @@ def page_powdery_mildew_detector_body():
             st.image(
                 img_pil, caption=f"Image Size: {img_array.shape[1]}px width x {img_array.shape[0]}px height")
 
-            version = 'v3'
+            version = 'v2'
             resized_img = resize_input_image(img=img_pil, version=version)
-            pred_proba, pred_class = load_model_and_predict(
+            pred_class = load_model_and_predict(
                 resized_img, version=version)
 
             df_report = df_report.append({"Name": image.name, 'Result': pred_class},
