@@ -179,7 +179,7 @@ The model used for the dashboard is v2, as it is the most accurate.
 
 ### Heroku
 
-- The App live link is: <https://YOUR_APP_NAME.herokuapp.com/>
+- The App live link is: [https://powdery-mildew-kristfur-1b27c28aaef5.herokuapp.com/](https://powdery-mildew-kristfur-1b27c28aaef5.herokuapp.com/)
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps.
 
